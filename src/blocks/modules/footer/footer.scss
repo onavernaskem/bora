@@ -2,8 +2,9 @@
   background: $blue;
   color: #fff;
   flex: 0 0 auto;
-  padding-top: 50px;
+  // padding-top: 50px;
   padding-bottom: 50px;
+  margin-left: -30px;
   .container {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr;
@@ -23,4 +24,10 @@
       }
     }
   }
+}
+.feedback {
+  background: $light;
+  margin-bottom: 50px;
+  color: black;
+  padding: 50px 30px;
 }
