@@ -1,7 +1,7 @@
 .header {
   .container {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: ". . . .";
@@ -14,6 +14,9 @@
     color: $gray;
     padding-left: 60px;
     height: 40px;
+    @media screen and (max-width: 780px) {
+      display: none;
+    }
     span {
       font-size: 12px;
       display: block;
@@ -40,6 +43,9 @@
       align-items: center;
       color: #fff;
       list-style: none;
+      @media screen and (max-width: 780px) {
+        display: none;
+      }
       li {
         display: flex;
         align-items: center;
@@ -78,5 +84,10 @@
     font-size: 32px;
     padding-left: 100px;
     text-transform: uppercase;
+    @media screen and (max-width: 780px) {
+      height: 100px;
+      font-size: 20px;
+      padding-left: 0;
+    }
   }
 }

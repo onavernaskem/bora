@@ -40,6 +40,9 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   color: $blue;
+  @media screen and (max-width: 780px) {
+    font-size: 1.5em;
+  }
 }
 
 .t_c {
@@ -62,4 +65,7 @@ h2 {
 
 ._right {
   float: right;
+  @media screen and (max-width: 780px) {
+    float: none;
+  }
 }

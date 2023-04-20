@@ -5,14 +5,22 @@
   // padding-top: 50px;
   padding-bottom: 50px;
   margin-left: -30px;
+  @media screen and (max-width: 780px) {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
   .container {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: ". . . .";
     padding: 15px 60px;
     align-items: center;
+    @media screen and (max-width: 780px) {
+      display: block;
+      padding: 20px;
+    }
   }
   &_catalog,
   &_nav {
@@ -37,6 +45,9 @@
   &_phone {
     font-size: 17px;
   }
+  &_logo {
+    margin-bottom: 30px;
+  }
 }
 .feedback {
   background: $light;
@@ -46,6 +57,10 @@
   .container {
     grid-template-columns: 1fr 1fr;
     align-items: start;
+    @media screen and (max-width: 780px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
   .message {
     color: $red;
@@ -61,6 +76,9 @@
     flex-direction: column;
     width: 80%;
     max-width: 800px;
+    @media screen and (max-width: 780px) {
+      width: 100%;
+    }
     input[type="text"] {
       border: none;
       background: #fff;
