@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>gulp-scss-starter</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-</head>
+@@include("../views/layouts/head.html")
 
 <body>
     @@include("../blocks/modules/header/header.html")
@@ -39,8 +10,9 @@
                 <li><a href="">Разматыватели</a></li>
                 <li><a href="">Подающие устройства</a></li>
                 <li><a href="">Правильные машины</a></li>
-                <li><a href="">Механические прессы</a>
-                    <ul>
+                <li class="have_submenu"><a href="">Механические прессы</a>
+                    <ul class="submenu">
+                        <li><a href="">Серия GH21</a></li>
                         <li><a href="">Серия GH21</a></li>
                     </ul>
                 </li>
@@ -56,24 +28,24 @@
 
             <h1>каталог оборудования бора</h1>
 
-<section class="catalog_list">
-    <div class="catalog_item">
-        <img src="" alt="">
-        <div class="description">Размотчики металла</div>
-    </div>
-    <div class="catalog_item">
-        <img src="" alt="">
-        <div class="description">Подающие устройства</div>
-    </div>
-    <div class="catalog_item">
-        <img src="" alt="">
-        <div class="description">Правильные машины</div>
-    </div>
-    <div class="catalog_item">
-        <img src="" alt="">
-        <div class="description">Механические прессы</div>
-    </div>
-</section>
+            <section class="catalog_list">
+                <div class="catalog_item">
+                    <img src="img/1.jpg" alt="">
+                    <div class="description"> <a href="">Размотчики металла</a> </div>
+                </div>
+                <div class="catalog_item">
+                    <img src="img/1.jpg" alt="">
+                    <div class="description"><a href="">Подающие устройства</a></div>
+                </div>
+                <div class="catalog_item">
+                    <img src="img/1.jpg" alt="">
+                    <div class="description"><a href="">Правильные машины</a></div>
+                </div>
+                <div class="catalog_item">
+                    <img src="img/1.jpg" alt="">
+                    <div class="description"><a href="">Механические прессы</a></div>
+                </div>
+            </section>
             <div class="t_c">
                 <p>Наша компания предлагает своим клиентам высокоточное оборудование для производства автоматических
                     линий холодной штамповки как собственного, так и китайского производства по весьма демократичным
@@ -97,26 +69,39 @@
                 </div>
 
                 <div class="advantages">
-                    <div class="advantages_title">Преимущества нашей компании:</div>    
-                   <div class="advantages_list">
-                    <div>Современное производство</div>
-                    <div>Постгарантийное обслуживание</div>
-                    <div>Надежные комплектующие</div>
-                    <div>Квалифицированный персонал</div>
-                    <div>Индивидуальный подход</div>
-                    <div>Опыт более 20 лет</div> 
-                   </div>                       
+                    <div class="advantages_title">Преимущества нашей компании:</div>
+                    <div class="advantages_list">
+                        <div>Современное производство</div>
+                        <div>Постгарантийное обслуживание</div>
+                        <div>Надежные комплектующие</div>
+                        <div>Квалифицированный персонал</div>
+                        <div>Индивидуальный подход</div>
+                        <div>Опыт более 20 лет</div>
+                    </div>
                 </div>
             </section>
 
 
             <h2>Еще заголовок</h2>
             <div class="t_c">
-            <p>Наша компания предлагает своим клиентам высокоточное оборудование для производства автоматических линий
-                холодной штамповки как собственного, так и китайского производства по весьма демократичным ценам.
-            </p>
-</div>
-           
+                <p>Наша компания предлагает своим клиентам высокоточное оборудование для производства автоматических
+                    линий
+                    холодной штамповки как собственного, так и китайского производства по весьма демократичным ценам.
+                </p>
+            </div>
+            <section class="catalog_list _cols_2">
+                <div class="catalog_item">
+                    <img src="img/2.jpg" alt="">
+                    <div class="description"> <a href="">Автоматизация штамповки</a> </div>
+                </div>
+                <div class="catalog_item">
+                    <img src="img/2.jpg" alt="">
+                    <div class="description"><a href="">Стандартные линии</a></div>
+                </div>
+
+            </section>
+
+
             @@include("../blocks/modules/footer/footer.html")
 
 

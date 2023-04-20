@@ -18,11 +18,24 @@
   &_nav {
     ul {
       list-style: none;
+      li {
+        margin-bottom: 5px;
+      }
       a {
         color: #fff;
         text-decoration: none;
+        &:hover {
+          color: darken(#fff, 15);
+        }
       }
     }
+  }
+  &_address,
+  &_time {
+    margin-bottom: 20px;
+  }
+  &_phone {
+    font-size: 17px;
   }
 }
 .feedback {
@@ -30,4 +43,43 @@
   margin-bottom: 50px;
   color: black;
   padding: 50px 30px;
+  .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .message {
+    color: $red;
+    font-size: 12px;
+  }
+  h3 {
+    font-weight: normal;
+    color: $blue;
+    text-transform: uppercase;
+  }
+  form {
+    display: grid;
+    flex-direction: column;
+    width: 80%;
+    max-width: 800px;
+    input[type="text"] {
+      border: none;
+      background: #fff;
+      height: 30px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 0;
+    }
+    textarea {
+      border: none;
+      background: #fff;
+      border-radius: 0;
+      height: 100px;
+    }
+    .btn {
+      flex-grow: 0;
+      width: fit-content;
+      justify-self: flex-end;
+      margin-top: 20px;
+    }
+  }
 }
