@@ -1,0 +1,23 @@
+.news {
+  &_list {
+    margin-bottom: 30px;
+  }
+  &_item {
+    margin-bottom: 60px;
+    .date {
+      color: $gray;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 1.4em;
+      margin-bottom: 15px;
+    }
+    .link {
+      color: $red;
+      margin-top: 10px;
+      display: block;
+      background: url(../img/arrow.png) no-repeat;
+    }
+  }
+}
