@@ -64,6 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["imagemin-pngquant", "npm:9.0.2"],\
             ["imagemin-webp", "npm:6.1.0"],\
             ["imagemin-zopfli", "npm:7.0.0"],\
+            ["jquery", "npm:3.6.4"],\
             ["lint-staged", "npm:12.5.0"],\
             ["postcss", "npm:8.4.21"],\
             ["postcss-scss", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:4.0.6"],\
@@ -9931,6 +9932,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["imagemin-pngquant", "npm:9.0.2"],\
             ["imagemin-webp", "npm:6.1.0"],\
             ["imagemin-zopfli", "npm:7.0.0"],\
+            ["jquery", "npm:3.6.4"],\
             ["lint-staged", "npm:12.5.0"],\
             ["postcss", "npm:8.4.21"],\
             ["postcss-scss", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:4.0.6"],\
@@ -11777,6 +11779,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jpeg-recompress-bin", "npm:5.1.2"],\
             ["bin-build", "npm:3.0.0"],\
             ["bin-wrapper", "npm:4.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["jquery", [\
+        ["npm:3.6.4", {\
+          "packageLocation": "./.yarn/cache/jquery-npm-3.6.4-c665e9b5ea-8354f7bd0a.zip/node_modules/jquery/",\
+          "packageDependencies": [\
+            ["jquery", "npm:3.6.4"]\
           ],\
           "linkType": "HARD"\
         }]\

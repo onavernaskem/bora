@@ -1,0 +1,143 @@
+.burger-menu {
+  @media screen and (min-width: 680px) {
+    display: none;
+  }
+  &_button {
+    top: 20px;
+    left: 10px;
+    z-index: 30;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.4s;
+    display: none;
+    @media screen and (max-width: 680px) {
+      position: absolute;
+      display: block;
+    }
+  }
+  &_lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &_lines::before,
+  &_lines::after,
+  &_lines {
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.4s;
+    background-color: rgba($main-color, 1);
+  }
+
+  &_lines::before {
+    content: "";
+    top: -8px;
+    left: 0;
+  }
+  &_lines::after {
+    content: "";
+    top: 8px;
+    left: 0;
+  }
+  &_active {
+    .burger-menu_lines {
+      background-color: transparent;
+    }
+    .burger-menu_lines::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    .burger-menu_lines::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &_nav {
+    text-align: center;
+    padding-top: 34px;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    left: 0;
+    top: 80px;
+    overflow-y: auto;
+    left: -100%;
+    transition: 0.3s;
+    background-color: #fff;
+  }
+  &_active {
+    .burger-menu_nav {
+      left: 0;
+    }
+    .burger-menu_lines::before,
+    .burger-menu_lines::after {
+      background: $main-color !important;
+    }
+    .burger-menu_overlay {
+      display: block;
+    }
+  }
+  &_link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    &:hover {
+      filter: brightness(0.7);
+    }
+    a {
+      color: $main-color;
+      text-decoration: none;
+      &:hover {
+        color: $blue;
+      }
+    }
+    &.active {
+      a {
+        color: $blue;
+      }
+    }
+  }
+  &_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+  }
+  &_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px 0 75px;
+  }
+  &_phone {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    a {
+      color: $main-color;
+    }
+  }
+  &_logo {
+    svg {
+      display: block;
+      width: 120px;
+      height: 43px;
+    }
+
+    svg use {
+      fill: $main-color;
+    }
+  }
+}

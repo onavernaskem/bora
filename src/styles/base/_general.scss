@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   height: 100%;
   font-family: Tahoma, Geneva, sans-serif;
-  color: #2b2b35;
+  color: $main-color;
 }
 header {
   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
