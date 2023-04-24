@@ -4,7 +4,7 @@
   }
   &_button {
     top: 20px;
-    left: 10px;
+    right: 10px;
     z-index: 30;
     width: 50px;
     height: 50px;
@@ -57,7 +57,7 @@
   }
 
   &_nav {
-    text-align: center;
+    // text-align: center;
     padding-top: 34px;
     width: 100%;
     position: fixed;
@@ -71,6 +71,13 @@
     left: -100%;
     transition: 0.3s;
     background-color: #fff;
+    ul {
+      padding-left: 60px;
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+      }
+    }
   }
   &_active {
     .burger-menu_nav {
@@ -90,6 +97,7 @@
     line-height: 21px;
     text-transform: uppercase;
     margin-bottom: 23px;
+
     &:hover {
       filter: brightness(0.7);
     }

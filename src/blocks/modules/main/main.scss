@@ -1,6 +1,7 @@
 .main {
   display: flex;
   flex: 1 0 auto;
+  overflow: hidden;
   @media screen and (max-width: 780px) {
     flex-direction: column;
   }
