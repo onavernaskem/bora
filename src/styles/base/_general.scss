@@ -35,11 +35,15 @@ ul {
 
 h1,
 h2 {
-  font-size: 3.5vw;
+  font-size: 3.1vw;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
   color: $blue;
+  @media screen and (min-width: 1400px) {
+    font-size: 35px;
+
+  }
   @media screen and (max-width: 780px) {
     font-size: 1.5em;
     text-align: left;
