@@ -1,17 +1,33 @@
 .sideleft {
   width: 20%;
+  min-width: 200px;
   background: $dark;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 33px;
-  @media screen and (max-width: 780px) {
-    width: auto;
+.open_nav {
+  @media screen and (max-width: 680px) {
+  display: none;
+  color: #fff;
   }
-  ul {
-    list-style: none;
-    @media screen and (max-width: 780px) {
+  &_link {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    font: inherit;
+    color: inherit;
+    padding-right: 20px;
+    padding-left: 0;
+    background: url(../img/arrow-down.png) no-repeat 100% 50%;
+    @media screen and (min-width: 680px) {
       display: none;
     }
+  }
+
+}
+
+  ul {
+    list-style: none;
     li {
       a {
         color: #fff;
@@ -21,6 +37,7 @@
         &:hover {
           background: #4c4c57;
         }
+        @media screen and (max-width: 680px) {padding: 10px 0;}
       }
       ul.submenu {
         transition: all 0.3s ease;
@@ -54,6 +71,22 @@
           a:hover {
             background: transparent;
           }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 680px) {
+    width: auto;
+    padding: 10px 20px;
+    .open_nav {
+      display: block;
+      ul {
+        display: none;
+      }
+      &.active {
+        ul {
+        
+        display: block;
         }
       }
     }

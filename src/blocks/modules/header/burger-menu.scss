@@ -1,5 +1,5 @@
 .burger-menu {
-  @media screen and (min-width: 680px) {
+  @media screen and (min-width: 780px) {
     display: none;
   }
   &_button {
@@ -11,7 +11,7 @@
     border-radius: 50%;
     transition: 0.4s;
     display: none;
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 780px) {
       position: absolute;
       display: block;
     }
@@ -57,7 +57,6 @@
   }
 
   &_nav {
-    // text-align: center;
     padding-top: 34px;
     width: 100%;
     position: fixed;
@@ -72,7 +71,7 @@
     transition: 0.3s;
     background-color: #fff;
     ul {
-      padding-left: 60px;
+      padding-left: 20px;
       list-style: none;
       li {
         margin-bottom: 10px;
@@ -99,7 +98,8 @@
     margin-bottom: 23px;
 
     &:hover {
-      filter: brightness(0.7);
+      -webkit-filter: brightness(0.7);
+              filter: brightness(0.7);
     }
     a {
       color: $main-color;
